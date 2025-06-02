@@ -139,10 +139,12 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Watches.cpp" />
+    <ClCompile Include="WatchesMedia.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RaylibTools.hpp" />
     <ClInclude Include="Watches.h" />
+    <ClInclude Include="WatchesMedia.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

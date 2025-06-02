@@ -12,19 +12,22 @@
 
 class Watches
 {
-private:
+protected:
 	Vector2 position;
 	int radius;
 	int lineSize;
 	Color color;
-private:
+protected:
 	Watches(int x, int y, int radius);
 public:
 	static Watches* create(int x, int y, int radius);
-	void drawTick() const;									// 根据当前时间绘制
-	void drawTable() const;									// 绘制表盘
-	void drawPointer() const;								// 绘制指针
+	virtual void drawTick() const;							// 根据当前时间绘制
+	virtual void drawTable() const;							// 绘制表盘
+	virtual void drawPointer() const;						// 绘制指针
 	void setLine(int size);									// 设置线条粗细,默认是2
 	void setColor(Color color);								// 设置颜色,默认是黑
+	Vector2 getPosition() const;							// 获取位置
+public:
+	virtual ~Watches() = default;							// 析构函数
 };
 

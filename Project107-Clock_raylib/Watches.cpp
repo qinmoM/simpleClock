@@ -68,12 +68,12 @@ void Watches::drawPointer() const
 	struct tm* time = localtime(&data);
 
 	// 计算弧度的xy等
-	int secX = static_cast<int>(0.8 * radius * std::sinf(time->tm_sec * 2 * PI / 60));
-	int secY = static_cast<int>(-0.8 * radius * std::cosf(time->tm_sec * 2 * PI / 60));
-	int minX = static_cast<int>(0.65 * radius * std::sinf(time->tm_min * 2 * PI / 60));
-	int minY = static_cast<int>(-0.65 * radius * std::cosf(time->tm_min * 2 * PI / 60));
-	int hourX = static_cast<int>(0.45 * radius * std::sinf((time->tm_hour * 5 + time->tm_min / 12) * 2 * PI / 60));
-	int hourY = static_cast<int>(-0.45 * radius * std::cosf((time->tm_hour * 5 + time->tm_min / 12) * 2 * PI / 60));
+	int secX = static_cast<int>(0.8f * radius * std::sinf(time->tm_sec * 2 * PI / 60));
+	int secY = static_cast<int>(-0.8f * radius * std::cosf(time->tm_sec * 2 * PI / 60));
+	int minX = static_cast<int>(0.65f * radius * std::sinf(time->tm_min * 2 * PI / 60));
+	int minY = static_cast<int>(-0.65f * radius * std::cosf(time->tm_min * 2 * PI / 60));
+	int hourX = static_cast<int>(0.45f * radius * std::sinf((time->tm_hour * 5 + time->tm_min / 12.0f) * 2 * PI / 60));
+	int hourY = static_cast<int>(-0.45f * radius * std::cosf((time->tm_hour * 5 + time->tm_min / 12.0f) * 2 * PI / 60));
 
 	// 绘制秒针
 	DrawLineEx({ position.x + secX, position.y + secY },
@@ -94,4 +94,9 @@ void Watches::setLine(int size)
 void Watches::setColor(Color color)
 {
 	this->color = color;
+}
+
+Vector2 Watches::getPosition() const
+{
+	return position;
 }
