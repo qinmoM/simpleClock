@@ -1,15 +1,15 @@
 # simpleClock ： 简易的钟
 ---
 ## 项目介绍：  
-实现一个简单的，按现实时间绘制的钟表类。  
-以及可以播放声音的多媒体钟表类。  
+- 实现一个简单的，按现实时间绘制的钟表类。  
+- 以及可以播放声音的多媒体钟表类。  
 ---
 ## 开发环境：  
-本项目c++语言实现，同时使用了VS2022+[Raylib](https://github.com/raysan5/raylib)图形库。  
+- 本项目c++语言实现，同时使用了VS2022+[Raylib](https://github.com/raysan5/raylib)图形库。  
 ---
 ## 版权声明：  
-本项目使用[Raylib](https://github.com/raysan5/raylib)图形库，其版权归原作者所有。  
-本项目图像绘制来源于B站up主*蒸汽小毛*。  
+- 本项目使用[Raylib](https://github.com/raysan5/raylib)图形库，其版权归原作者所有。  
+- 本项目图像绘制来源于B站up主*蒸汽小毛*。  
 ---
 > 学习第三方库的引入和使用而写的，仅作为学习交流使用。  
 > 欢迎讨论。  
