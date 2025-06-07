@@ -24,9 +24,12 @@
     <ClCompile Include="WatchesMedia.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="RaylibTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RaylibTools.hpp">
+    <ClInclude Include="RaylibTools.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Watches.h">

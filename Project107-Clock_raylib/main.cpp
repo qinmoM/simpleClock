@@ -3,8 +3,8 @@
 #include "Watches.h"
 #include "WatchesMedia.h"
 
-const int WIDTH = 860;
-const int HEIGHT = 640;
+const int WIDTH = 1280;
+const int HEIGHT = 720;
 
 int main()
 {
@@ -14,7 +14,7 @@ int main()
 	// ±Ì∂‘œÛ
 	//std::shared_ptr<Watches> watches(Watches::create(WIDTH / 2, HEIGHT / 2, 220));
 	//std::shared_ptr<Watches> watches = std::make_shared<Watches>(Watches::create(WIDTH / 2, HEIGHT / 2, 220));
-	std::unique_ptr<WatchesMedia> watchesMedia(WatchesMedia::create(WIDTH / 2, HEIGHT / 2, 220));
+	std::unique_ptr<WatchesMedia> watchesMedia(WatchesMedia::create(WIDTH / 2, HEIGHT / 2, 360));
 	while (!WindowShouldClose())
 	{
 		BeginDrawing();

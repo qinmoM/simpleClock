@@ -138,11 +138,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RaylibTools.cpp" />
     <ClCompile Include="Watches.cpp" />
     <ClCompile Include="WatchesMedia.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RaylibTools.hpp" />
+    <ClInclude Include="RaylibTools.h" />
     <ClInclude Include="Watches.h" />
     <ClInclude Include="WatchesMedia.h" />
   </ItemGroup>
